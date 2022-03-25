@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="cargando">Cargando&#8230;</string>
+    <string name="dia">Día : %1$s</string>
+    <string name="clima">Clima : %1$s</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="Detalle"><u>Detalle</u></string>
+    <string name="humedad">Humedad : %1$s</string>
+    <string name="presion">Presión : %1$d</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="no_hay_internet">No tiene conexión a internet</string>
+
+</resources>

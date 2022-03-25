@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootView"
+    >
+
+    <RelativeLayout
+        android:padding="@dimen/dimen_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/itemIcon"
+            android:background="@drawable/ic_baseline_cloud_24"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_toEndOf="@id/itemIcon"
+            tools:text="Día" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_below="@id/txtDia"
+            android:id="@+id/txtDivider"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_toEndOf="@id/itemIcon"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_below="@id/txtDivider"
+            android:id="@+id/txtClima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_toEndOf="@id/itemIcon"
+            tools:text="Clima" />
+
+        <View
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_below="@id/txtClima"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
